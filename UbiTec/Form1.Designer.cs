@@ -54,7 +54,7 @@
             this.label1.Font = new System.Drawing.Font("Algerian", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(169, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(898, 38);
+            this.label1.Size = new System.Drawing.Size(868, 36);
             this.label1.TabIndex = 5;
             this.label1.Text = "Bienvenidos al instituto tecnologico de tlaxiaco";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -95,7 +95,7 @@
             // button1
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(0, 641);
+            this.button1.Location = new System.Drawing.Point(-2, 641);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(238, 59);
             this.button1.TabIndex = 7;

@@ -72,9 +72,9 @@
             this.Ubicaciones.BackColor = System.Drawing.Color.Transparent;
             this.Ubicaciones.FlatAppearance.BorderSize = 0;
             this.Ubicaciones.ForeColor = System.Drawing.Color.Black;
-            this.Ubicaciones.Location = new System.Drawing.Point(0, 641);
+            this.Ubicaciones.Location = new System.Drawing.Point(0, 646);
             this.Ubicaciones.Name = "Ubicaciones";
-            this.Ubicaciones.Size = new System.Drawing.Size(250, 59);
+            this.Ubicaciones.Size = new System.Drawing.Size(250, 54);
             this.Ubicaciones.TabIndex = 2;
             this.Ubicaciones.Text = "Ubicaciones";
             this.Ubicaciones.UseVisualStyleBackColor = false;
