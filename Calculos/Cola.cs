@@ -8,29 +8,29 @@ using System.Threading.Tasks;
 namespace BibliotecaCola
 {
     public class Cola
-    { 
-        Nodo frente;
-        Nodo final;
-        int tamaño;
-        int turnoActual; 
+    {
+        static Nodo frente;
+        static Nodo final;
+        static int tamaño;
+        static int turnoActual;
 
-        public Cola()
+        static Cola()
         {
             frente = null;
             final = null;
             tamaño = 0;
-            turnoActual = 0; 
+            turnoActual = 0;
         }
 
-        public bool Vacia()
+        public static bool Vacia()
         {
             return frente == null;
         }
 
-        public String Encolar(string nombre)
+        public static string Encolar(string nombre)
         {
             Nodo nuevo = new Nodo(turnoActual, nombre);
-            turnoActual++; 
+            turnoActual++;
 
             if (Vacia())
             {
@@ -46,17 +46,15 @@ namespace BibliotecaCola
             return $"Turno de {nombre} es {turnoActual}";
         }
 
-        public void ImprimirCola()
+        public static void ImprimirCola()
         {
             Nodo recorrido = frente;
             while (recorrido != null)
             {
-                Console.Write(recorrido.Nombre + "Turno "+turnoActual);
+                Console.WriteLine($"{recorrido.Nombre} - Turno: {recorrido.Turno}");
                 recorrido = recorrido.Siguiente;
             }
         }
-
-
     }
 
     public class Nodo
