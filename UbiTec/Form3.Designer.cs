@@ -361,9 +361,10 @@
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(256, 641);
+            this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button20.Location = new System.Drawing.Point(256, 646);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(200, 59);
+            this.button20.Size = new System.Drawing.Size(200, 54);
             this.button20.TabIndex = 11;
             this.button20.Text = "Ficha de atencion";
             this.button20.UseVisualStyleBackColor = true;
@@ -371,6 +372,7 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel2.Controls.Add(this.button21);
             this.panel2.Location = new System.Drawing.Point(256, 583);
             this.panel2.Name = "panel2";
@@ -379,7 +381,7 @@
             // 
             // button21
             // 
-            this.button21.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button21.FlatAppearance.BorderSize = 0;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button21.Location = new System.Drawing.Point(0, 10);
