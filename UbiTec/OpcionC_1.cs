@@ -15,8 +15,7 @@ namespace UbiTec
         public OpcionC_1()
         {
             InitializeComponent();
-            Form3 fr3 = new Form3();
-            fr3.Close();
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private void OpcionC_1_Load(object sender, EventArgs e)
@@ -24,35 +23,11 @@ namespace UbiTec
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form3 fr3 = new Form3();
-            fr3.Show();
-            this.Close();
-        }
 
         private void BotonCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
 
-        private void btonMaximizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btonMaximizar.Visible = false;
-            btonRestaurar.Visible = true;
-        }
-
-        private void btonMinimizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void btonRestaurar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btonRestaurar.Visible = false;
-            btonMaximizar.Visible = true;
-        }
     }
 }

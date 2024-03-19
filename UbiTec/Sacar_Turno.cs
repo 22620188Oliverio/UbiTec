@@ -18,6 +18,7 @@ namespace UbiTec
         public Sacar_Turno()
         {
             InitializeComponent();
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -39,32 +40,6 @@ namespace UbiTec
 
         private void BotonCerrar_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void btonMaximizar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Maximized;
-            btonMaximizar.Visible = false;
-            btonMinimizar.Visible = true;
-        }
-
-        private void btonMinimizar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void btonRestaurar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Normal;
-            btonMinimizar.Visible = false;
-            btonMaximizar.Visible = true;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form3 fr3 = new Form3();
-            fr3.Show();
             this.Close();
         }
 

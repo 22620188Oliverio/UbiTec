@@ -11,14 +11,12 @@ namespace BibliotecaCola
     {
         static Nodo frente;
         static Nodo final;
-        static int tamaño;
         static int turnoActual;
 
         static Cola()
         {
             frente = null;
             final = null;
-            tamaño = 0;
             turnoActual = 0;
         }
 
@@ -42,7 +40,6 @@ namespace BibliotecaCola
                 final.Siguiente = nuevo;
                 final = nuevo;
             }
-            tamaño++;
             return $"Turno de {nombre} es {turnoActual}";
         }
 
@@ -51,7 +48,7 @@ namespace BibliotecaCola
             Nodo recorrido = frente;
             while (recorrido != null)
             {
-                Console.WriteLine($"{recorrido.Nombre} - Turno: {recorrido.Turno}");
+                Console.WriteLine($"{recorrido.Nombre} - Turno: {recorrido.Turno+1}");
                 recorrido = recorrido.Siguiente;
             }
         }
