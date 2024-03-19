@@ -49,6 +49,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button21 = new System.Windows.Forms.Button();
             this.btonRestaurar = new System.Windows.Forms.PictureBox();
             this.btonMinimizar = new System.Windows.Forms.PictureBox();
             this.btonMaximizar = new System.Windows.Forms.PictureBox();
@@ -57,6 +60,7 @@
             this.panel = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).BeginInit();
@@ -355,6 +359,37 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(256, 641);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(200, 59);
+            this.button20.TabIndex = 11;
+            this.button20.Text = "Ficha de atencion";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.button21);
+            this.panel2.Location = new System.Drawing.Point(256, 583);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 60);
+            this.panel2.TabIndex = 12;
+            // 
+            // button21
+            // 
+            this.button21.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button21.FlatAppearance.BorderSize = 0;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Location = new System.Drawing.Point(0, 10);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(200, 50);
+            this.button21.TabIndex = 0;
+            this.button21.Text = "Division de Estudios";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
             // btonRestaurar
             // 
             this.btonRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -448,6 +483,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 700);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.button20);
             this.Controls.Add(this.btonRestaurar);
             this.Controls.Add(this.btonMinimizar);
             this.Controls.Add(this.btonMaximizar);
@@ -462,6 +499,7 @@
             this.Text = "s";
             this.Load += new System.EventHandler(this.Form3_Load);
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).EndInit();
@@ -503,5 +541,8 @@
         private System.Windows.Forms.PictureBox btonMaximizar;
         private System.Windows.Forms.PictureBox btonMinimizar;
         private System.Windows.Forms.PictureBox btonRestaurar;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button21;
     }
 }

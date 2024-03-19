@@ -15,7 +15,7 @@ namespace UbiTec
         public Form3()
         {
             InitializeComponent();
-           // diseñoVisible();
+            diseñoVisible();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -43,28 +43,29 @@ namespace UbiTec
             
         }
 
-       /* private void diseñoVisible()
+       private void diseñoVisible()
         {
-            panel1.Visible = false;
+            //panel1.Visible = false;
+            panel2.Visible = false;
         }
 
         private void hideSubMenu()
         {
-            if(panel1.Visible == true)
+            if(panel2.Visible == true)
             {
-                panel1.Visible = false;
+                panel2.Visible = false;
             }
         }
          
         private void showSubmenu(Panel sub)
         {
-            if(panel1.Visible == false)
+            if(panel2.Visible == false)
             {
                 hideSubMenu();
-                panel1.Visible = true;
+                panel2.Visible = true;
             }
-            else { panel1.Visible = false; }
-        }*/
+            else { panel2.Visible = false; }
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -235,19 +236,6 @@ namespace UbiTec
             this.Close();
         }
 
-        private void button20_Click(object sender, EventArgs e)
-        {
-            DialogResult resultado = MessageBox.Show("¿Estás seguro de que quieres salir?", "Confirmar salida", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-
-            if (resultado == DialogResult.Yes)
-            {
-
-                Application.Exit();
-            }
-
-        }
-
         private void BotonCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -270,6 +258,18 @@ namespace UbiTec
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            showSubmenu(panel2);
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            Sacar_Turno sacarTurno = new Sacar_Turno();
+            sacarTurno.Show();
+            this.Close();
         }
     }
 }

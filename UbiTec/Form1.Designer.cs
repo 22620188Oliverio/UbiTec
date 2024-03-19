@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btonRestaurar = new System.Windows.Forms.PictureBox();
+            this.btonMinimizar = new System.Windows.Forms.PictureBox();
+            this.btonMaximizar = new System.Windows.Forms.PictureBox();
+            this.BotonCerrar = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.BotonCerrar = new System.Windows.Forms.PictureBox();
-            this.btonMaximizar = new System.Windows.Forms.PictureBox();
-            this.btonMinimizar = new System.Windows.Forms.PictureBox();
-            this.btonRestaurar = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -58,6 +58,70 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Bienvenidos al instituto tecnologico de tlaxiaco";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.Location = new System.Drawing.Point(-2, 641);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(238, 59);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Busqueda ";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btonRestaurar
+            // 
+            this.btonRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btonRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btonRestaurar.Image = global::UbiTec.Properties.Resources.dupdo__1_;
+            this.btonRestaurar.Location = new System.Drawing.Point(1120, 12);
+            this.btonRestaurar.Name = "btonRestaurar";
+            this.btonRestaurar.Size = new System.Drawing.Size(25, 25);
+            this.btonRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btonRestaurar.TabIndex = 11;
+            this.btonRestaurar.TabStop = false;
+            this.btonRestaurar.Visible = false;
+            this.btonRestaurar.Click += new System.EventHandler(this.btonRestaurar_Click);
+            // 
+            // btonMinimizar
+            // 
+            this.btonMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btonMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btonMinimizar.Image = global::UbiTec.Properties.Resources.eliminar;
+            this.btonMinimizar.Location = new System.Drawing.Point(1078, 12);
+            this.btonMinimizar.Name = "btonMinimizar";
+            this.btonMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btonMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btonMinimizar.TabIndex = 10;
+            this.btonMinimizar.TabStop = false;
+            this.btonMinimizar.Click += new System.EventHandler(this.btonMinimizar_Click);
+            // 
+            // btonMaximizar
+            // 
+            this.btonMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btonMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btonMaximizar.Image = global::UbiTec.Properties.Resources.cuadrado_en_blanco;
+            this.btonMaximizar.Location = new System.Drawing.Point(1120, 12);
+            this.btonMaximizar.Name = "btonMaximizar";
+            this.btonMaximizar.Size = new System.Drawing.Size(25, 25);
+            this.btonMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btonMaximizar.TabIndex = 9;
+            this.btonMaximizar.TabStop = false;
+            this.btonMaximizar.Click += new System.EventHandler(this.btonMaximizar_Click);
+            // 
+            // BotonCerrar
+            // 
+            this.BotonCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BotonCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BotonCerrar.Image = global::UbiTec.Properties.Resources.simbolo_x;
+            this.BotonCerrar.Location = new System.Drawing.Point(1163, 12);
+            this.BotonCerrar.Name = "BotonCerrar";
+            this.BotonCerrar.Size = new System.Drawing.Size(25, 25);
+            this.BotonCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BotonCerrar.TabIndex = 8;
+            this.BotonCerrar.TabStop = false;
+            this.BotonCerrar.Click += new System.EventHandler(this.BotonCerrar_Click);
             // 
             // pictureBox3
             // 
@@ -92,70 +156,6 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(-2, 641);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(238, 59);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Busqueda ";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // BotonCerrar
-            // 
-            this.BotonCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BotonCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BotonCerrar.Image = global::UbiTec.Properties.Resources.simbolo_x;
-            this.BotonCerrar.Location = new System.Drawing.Point(1163, 12);
-            this.BotonCerrar.Name = "BotonCerrar";
-            this.BotonCerrar.Size = new System.Drawing.Size(25, 25);
-            this.BotonCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BotonCerrar.TabIndex = 8;
-            this.BotonCerrar.TabStop = false;
-            this.BotonCerrar.Click += new System.EventHandler(this.BotonCerrar_Click);
-            // 
-            // btonMaximizar
-            // 
-            this.btonMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btonMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btonMaximizar.Image = global::UbiTec.Properties.Resources.cuadrado_en_blanco;
-            this.btonMaximizar.Location = new System.Drawing.Point(1120, 12);
-            this.btonMaximizar.Name = "btonMaximizar";
-            this.btonMaximizar.Size = new System.Drawing.Size(25, 25);
-            this.btonMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btonMaximizar.TabIndex = 9;
-            this.btonMaximizar.TabStop = false;
-            this.btonMaximizar.Click += new System.EventHandler(this.btonMaximizar_Click);
-            // 
-            // btonMinimizar
-            // 
-            this.btonMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btonMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btonMinimizar.Image = global::UbiTec.Properties.Resources.eliminar;
-            this.btonMinimizar.Location = new System.Drawing.Point(1077, 12);
-            this.btonMinimizar.Name = "btonMinimizar";
-            this.btonMinimizar.Size = new System.Drawing.Size(25, 25);
-            this.btonMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btonMinimizar.TabIndex = 10;
-            this.btonMinimizar.TabStop = false;
-            this.btonMinimizar.Click += new System.EventHandler(this.btonMinimizar_Click);
-            // 
-            // btonRestaurar
-            // 
-            this.btonRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btonRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btonRestaurar.Image = global::UbiTec.Properties.Resources.dupdo__1_;
-            this.btonRestaurar.Location = new System.Drawing.Point(1120, 12);
-            this.btonRestaurar.Name = "btonRestaurar";
-            this.btonRestaurar.Size = new System.Drawing.Size(25, 25);
-            this.btonRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btonRestaurar.TabIndex = 11;
-            this.btonRestaurar.TabStop = false;
-            this.btonRestaurar.Visible = false;
-            this.btonRestaurar.Click += new System.EventHandler(this.btonRestaurar_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -175,13 +175,13 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
