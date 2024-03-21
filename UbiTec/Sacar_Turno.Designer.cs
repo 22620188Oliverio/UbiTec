@@ -86,6 +86,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = global::UbiTec.Properties.Resources.Tec_Tlaxiaco_3337_;
             this.pictureBox2.Location = new System.Drawing.Point(389, 133);
             this.pictureBox2.Name = "pictureBox2";
@@ -98,7 +99,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
             this.ClientSize = new System.Drawing.Size(980, 640);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.BotonCerrar);

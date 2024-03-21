@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace UbiTec
 {
@@ -47,17 +48,8 @@ namespace UbiTec
             else { subMenu.Visible = false; }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }
@@ -86,11 +78,6 @@ namespace UbiTec
             btonMaximizar.Visible = true;
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -112,6 +99,7 @@ namespace UbiTec
 
         private void btonUbicaciones_Click(object sender, EventArgs e)
         {
+
             showSubmenu(subMenuUbicaciones);
         }
 
@@ -237,6 +225,23 @@ namespace UbiTec
         private void button22_Click(object sender, EventArgs e)
         {
             AbrirFormHijo(new Sacar_Turno());
+        }
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void panelContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+
         }
     }
 }

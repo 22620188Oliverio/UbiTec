@@ -40,7 +40,7 @@ namespace BibliotecaCola
                 final.Siguiente = nuevo;
                 final = nuevo;
             }
-            return $"Turno de {nombre} es {turnoActual}";
+            return $"El turno de {nombre} es {turnoActual}";
         }
 
         public static void ImprimirCola()

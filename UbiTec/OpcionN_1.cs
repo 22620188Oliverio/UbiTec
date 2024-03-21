@@ -17,6 +17,7 @@ namespace UbiTec
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
+
         }
 
         private void OpcionN_1_Load(object sender, EventArgs e)
