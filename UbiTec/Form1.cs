@@ -243,5 +243,25 @@ namespace UbiTec
             SendMessage(this.Handle, 0x112, 0xf012, 0);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Sacar_Turno());
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Sacar_Turno());
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Sacar_Turno());
+        }
     }
 }

@@ -62,10 +62,11 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(383, 369);
+            this.label1.Font = new System.Drawing.Font("Ebrima", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(343, 347);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(201, 33);
+            this.label1.Size = new System.Drawing.Size(278, 41);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ingresa tu nombre";
             this.label1.Click += new System.EventHandler(this.txtNombre_Click);
@@ -88,7 +89,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBox2.Image = global::UbiTec.Properties.Resources.Tec_Tlaxiaco_3337_;
-            this.pictureBox2.Location = new System.Drawing.Point(389, 133);
+            this.pictureBox2.Location = new System.Drawing.Point(389, 84);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(195, 200);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
