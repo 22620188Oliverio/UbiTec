@@ -263,5 +263,10 @@ namespace UbiTec
         {
             AbrirFormHijo(new Sacar_Turno());
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

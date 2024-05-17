@@ -30,6 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.SubMenuTurnos = new System.Windows.Forms.Panel();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button21 = new System.Windows.Forms.Button();
             this.subMenuUbicaciones = new System.Windows.Forms.Panel();
@@ -59,14 +62,11 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btonRestaurar = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btonMinimizar = new System.Windows.Forms.PictureBox();
             this.btonMaximizar = new System.Windows.Forms.PictureBox();
             this.BotonCerrar = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SubMenuTurnos.SuspendLayout();
             this.subMenuUbicaciones.SuspendLayout();
@@ -75,8 +75,8 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).BeginInit();
@@ -108,6 +108,48 @@
             this.SubMenuTurnos.Name = "SubMenuTurnos";
             this.SubMenuTurnos.Size = new System.Drawing.Size(220, 241);
             this.SubMenuTurnos.TabIndex = 10;
+            // 
+            // button24
+            // 
+            this.button24.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button24.FlatAppearance.BorderSize = 0;
+            this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Location = new System.Drawing.Point(0, 180);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(220, 60);
+            this.button24.TabIndex = 3;
+            this.button24.Text = "Ciencias Básicas";
+            this.button24.UseVisualStyleBackColor = true;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
+            // 
+            // button23
+            // 
+            this.button23.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button23.FlatAppearance.BorderSize = 0;
+            this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Location = new System.Drawing.Point(0, 120);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(220, 60);
+            this.button23.TabIndex = 2;
+            this.button23.Text = "Recursos Financieros";
+            this.button23.UseVisualStyleBackColor = true;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(0, 60);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 60);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Servicios Escolares";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button22
             // 
@@ -500,7 +542,7 @@
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(220, 60);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(980, 840);
+            this.panelContenedor.Size = new System.Drawing.Size(1019, 840);
             this.panelContenedor.TabIndex = 13;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
@@ -510,9 +552,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Ebrima", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(213, 130);
+            this.label1.Location = new System.Drawing.Point(232, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(555, 46);
+            this.label1.Size = new System.Drawing.Size(536, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = "Instituto Tecnologico De Tlaxiaco";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -521,7 +563,7 @@
             // 
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = global::UbiTec.Properties.Resources.Tec_Tlaxiaco_3337_;
-            this.pictureBox4.Location = new System.Drawing.Point(249, 208);
+            this.pictureBox4.Location = new System.Drawing.Point(268, 208);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(478, 377);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -532,12 +574,14 @@
             // 
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.btonRestaurar);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1200, 60);
+            this.panel2.Size = new System.Drawing.Size(1239, 60);
             this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // pictureBox1
@@ -560,6 +604,20 @@
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
+            // btonRestaurar
+            // 
+            this.btonRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btonRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btonRestaurar.Image = global::UbiTec.Properties.Resources.dupdo__1_;
+            this.btonRestaurar.Location = new System.Drawing.Point(1062, 12);
+            this.btonRestaurar.Name = "btonRestaurar";
+            this.btonRestaurar.Size = new System.Drawing.Size(25, 25);
+            this.btonRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btonRestaurar.TabIndex = 11;
+            this.btonRestaurar.TabStop = false;
+            this.btonRestaurar.Visible = false;
+            this.btonRestaurar.Click += new System.EventHandler(this.btonRestaurar_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::UbiTec.Properties.Resources.image_20__1_;
@@ -570,26 +628,12 @@
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
             // 
-            // btonRestaurar
-            // 
-            this.btonRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btonRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btonRestaurar.Image = global::UbiTec.Properties.Resources.dupdo__1_;
-            this.btonRestaurar.Location = new System.Drawing.Point(1120, 12);
-            this.btonRestaurar.Name = "btonRestaurar";
-            this.btonRestaurar.Size = new System.Drawing.Size(25, 25);
-            this.btonRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btonRestaurar.TabIndex = 11;
-            this.btonRestaurar.TabStop = false;
-            this.btonRestaurar.Visible = false;
-            this.btonRestaurar.Click += new System.EventHandler(this.btonRestaurar_Click);
-            // 
             // btonMinimizar
             // 
             this.btonMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btonMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btonMinimizar.Image = global::UbiTec.Properties.Resources.eliminar;
-            this.btonMinimizar.Location = new System.Drawing.Point(1078, 12);
+            this.btonMinimizar.Location = new System.Drawing.Point(1117, 12);
             this.btonMinimizar.Name = "btonMinimizar";
             this.btonMinimizar.Size = new System.Drawing.Size(25, 25);
             this.btonMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -602,7 +646,7 @@
             this.btonMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btonMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btonMaximizar.Image = global::UbiTec.Properties.Resources.cuadrado_en_blanco;
-            this.btonMaximizar.Location = new System.Drawing.Point(1120, 12);
+            this.btonMaximizar.Location = new System.Drawing.Point(1159, 12);
             this.btonMaximizar.Name = "btonMaximizar";
             this.btonMaximizar.Size = new System.Drawing.Size(25, 25);
             this.btonMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -615,7 +659,7 @@
             this.BotonCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.BotonCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BotonCerrar.Image = global::UbiTec.Properties.Resources.simbolo_x;
-            this.BotonCerrar.Location = new System.Drawing.Point(1163, 12);
+            this.BotonCerrar.Location = new System.Drawing.Point(1202, 12);
             this.BotonCerrar.Name = "BotonCerrar";
             this.BotonCerrar.Size = new System.Drawing.Size(25, 25);
             this.BotonCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -623,56 +667,13 @@
             this.BotonCerrar.TabStop = false;
             this.BotonCerrar.Click += new System.EventHandler(this.BotonCerrar_Click);
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 60);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Servicios Escolares";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button23
-            // 
-            this.button23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Location = new System.Drawing.Point(0, 120);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(220, 60);
-            this.button23.TabIndex = 2;
-            this.button23.Text = "Recursos Financieros";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
-            // 
-            // button24
-            // 
-            this.button24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Location = new System.Drawing.Point(0, 180);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(220, 60);
-            this.button24.TabIndex = 3;
-            this.button24.Text = "Ciencias Básicas";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 900);
+            this.ClientSize = new System.Drawing.Size(1239, 900);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btonRestaurar);
             this.Controls.Add(this.btonMinimizar);
             this.Controls.Add(this.btonMaximizar);
             this.Controls.Add(this.BotonCerrar);
@@ -691,8 +692,8 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).EndInit();
