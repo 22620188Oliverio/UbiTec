@@ -19,10 +19,6 @@ namespace UbiTec
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
@@ -62,20 +58,6 @@ namespace UbiTec
             this.Close();
         }
 
-        private void btonMaximizar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Maximized;
-            btonMaximizar.Visible = false;
-            btonRestaurar.Visible = true;
-        }
-
-        private void btonRestaurar_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-            btonRestaurar.Visible = false;
-            btonMaximizar.Visible = true;
-        }
-
         private void btonMinimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
@@ -88,6 +70,12 @@ namespace UbiTec
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit(); 
+        }
+
         private void panel2_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();

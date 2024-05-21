@@ -268,5 +268,32 @@ namespace UbiTec
         {
 
         }
+
+        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario;
+            formulario = panelContenedor.Controls.OfType<MiForm>().FirstOrDefault();
+            // Si el formulario no existe en el panel
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                panelContenedor.Controls.Add(formulario);
+                panelContenedor.Tag = formulario;
+                formulario.Show();
+            }
+            else
+            {
+                formulario.BringToFront(); // Si el formulario ya existe, solo lo lleva al frente
+            }
+        }
+
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            AbrirFormHijo(new Form2());
+        }
     }
 }

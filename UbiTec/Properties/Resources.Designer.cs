@@ -843,6 +843,36 @@ namespace UbiTec.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap stack_star_20dp_FILL0_wght400_GRAD0_opsz20 {
+            get {
+                object obj = ResourceManager.GetObject("stack_star_20dp_FILL0_wght400_GRAD0_opsz20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stack_star_20dp_FILL0_wght400_GRAD0_opsz201 {
+            get {
+                object obj = ResourceManager.GetObject("stack_star_20dp_FILL0_wght400_GRAD0_opsz201", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap stack_star_24dp_FILL0_wght400_GRAD0_opsz24 {
+            get {
+                object obj = ResourceManager.GetObject("stack_star_24dp_FILL0_wght400_GRAD0_opsz24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tec_Tlaxiaco_3337_ {
             get {
                 object obj = ResourceManager.GetObject("Tec Tlaxiaco[3337]", resourceCulture);

@@ -39,17 +39,11 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BotonCerrar = new System.Windows.Forms.PictureBox();
-            this.btonRestaurar = new System.Windows.Forms.PictureBox();
-            this.btonMaximizar = new System.Windows.Forms.PictureBox();
-            this.btonMinimizar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -162,9 +156,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.BotonCerrar);
-            this.panel2.Controls.Add(this.btonRestaurar);
-            this.panel2.Controls.Add(this.btonMaximizar);
-            this.panel2.Controls.Add(this.btonMinimizar);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox3);
@@ -187,43 +178,6 @@
             this.BotonCerrar.TabIndex = 14;
             this.BotonCerrar.TabStop = false;
             this.BotonCerrar.Click += new System.EventHandler(this.BotonCerrar_Click);
-            // 
-            // btonRestaurar
-            // 
-            this.btonRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btonRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btonRestaurar.Image = global::UbiTec.Properties.Resources.dupdo__1_;
-            this.btonRestaurar.Location = new System.Drawing.Point(615, 12);
-            this.btonRestaurar.Name = "btonRestaurar";
-            this.btonRestaurar.Size = new System.Drawing.Size(25, 25);
-            this.btonRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btonRestaurar.TabIndex = 12;
-            this.btonRestaurar.TabStop = false;
-            this.btonRestaurar.Visible = false;
-            // 
-            // btonMaximizar
-            // 
-            this.btonMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btonMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btonMaximizar.Image = global::UbiTec.Properties.Resources.cuadrado_en_blanco;
-            this.btonMaximizar.Location = new System.Drawing.Point(615, 12);
-            this.btonMaximizar.Name = "btonMaximizar";
-            this.btonMaximizar.Size = new System.Drawing.Size(25, 25);
-            this.btonMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btonMaximizar.TabIndex = 10;
-            this.btonMaximizar.TabStop = false;
-            // 
-            // btonMinimizar
-            // 
-            this.btonMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btonMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btonMinimizar.Image = global::UbiTec.Properties.Resources.eliminar;
-            this.btonMinimizar.Location = new System.Drawing.Point(571, 12);
-            this.btonMinimizar.Name = "btonMinimizar";
-            this.btonMinimizar.Size = new System.Drawing.Size(25, 25);
-            this.btonMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btonMinimizar.TabIndex = 11;
-            this.btonMinimizar.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -276,9 +230,6 @@
             this.Text = "registro";
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -300,9 +251,6 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox BotonCerrar;
-        private System.Windows.Forms.PictureBox btonRestaurar;
-        private System.Windows.Forms.PictureBox btonMaximizar;
-        private System.Windows.Forms.PictureBox btonMinimizar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;

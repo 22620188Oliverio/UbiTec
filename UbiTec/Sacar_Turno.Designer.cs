@@ -34,9 +34,9 @@
             this.BotonCerrar = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.No_Control = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.combo_Carrera = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -112,14 +112,14 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Numero de Control";
             // 
-            // textBox1
+            // No_Control
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(302, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(411, 34);
-            this.textBox1.TabIndex = 17;
+            this.No_Control.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.No_Control.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.No_Control.Location = new System.Drawing.Point(302, 101);
+            this.No_Control.Name = "No_Control";
+            this.No_Control.Size = new System.Drawing.Size(411, 34);
+            this.No_Control.TabIndex = 17;
             // 
             // label3
             // 
@@ -133,11 +133,11 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Carrera";
             // 
-            // comboBox1
+            // combo_Carrera
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.combo_Carrera.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.combo_Carrera.FormattingEnabled = true;
+            this.combo_Carrera.Items.AddRange(new object[] {
             "Ingenieria en Sistemas computacionales",
             "Ingenieria Civil",
             "Ingenieria Mecatronica",
@@ -145,10 +145,10 @@
             "Ingenieria Industrial",
             "Licenciatura en Arquitectura",
             "Licenciatura en Administracion"});
-            this.comboBox1.Location = new System.Drawing.Point(302, 179);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(411, 24);
-            this.comboBox1.TabIndex = 19;
+            this.combo_Carrera.Location = new System.Drawing.Point(302, 179);
+            this.combo_Carrera.Name = "combo_Carrera";
+            this.combo_Carrera.Size = new System.Drawing.Size(411, 24);
+            this.combo_Carrera.TabIndex = 19;
             // 
             // Sacar_Turno
             // 
@@ -156,9 +156,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
             this.ClientSize = new System.Drawing.Size(980, 640);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.combo_Carrera);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.No_Control);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.BotonCerrar);
@@ -184,8 +184,8 @@
         private System.Windows.Forms.PictureBox BotonCerrar;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox No_Control;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox combo_Carrera;
     }
 }

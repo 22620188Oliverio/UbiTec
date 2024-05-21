@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button25 = new System.Windows.Forms.Button();
             this.SubMenuTurnos = new System.Windows.Forms.Panel();
             this.button24 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
@@ -57,8 +58,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btonUbicaciones = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -70,8 +69,6 @@
             this.panel1.SuspendLayout();
             this.SubMenuTurnos.SuspendLayout();
             this.subMenuUbicaciones.SuspendLayout();
-            this.panelContenedor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -85,6 +82,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.button25);
             this.panel1.Controls.Add(this.SubMenuTurnos);
             this.panel1.Controls.Add(this.button21);
             this.panel1.Controls.Add(this.subMenuUbicaciones);
@@ -95,6 +93,25 @@
             this.panel1.Size = new System.Drawing.Size(220, 840);
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.White;
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button25.FlatAppearance.BorderSize = 0;
+            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Image = global::UbiTec.Properties.Resources.patient_list_FILL0_wght400_GRAD0_opsz24;
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button25.Location = new System.Drawing.Point(0, 624);
+            this.button25.Name = "button25";
+            this.button25.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button25.Size = new System.Drawing.Size(220, 60);
+            this.button25.TabIndex = 11;
+            this.button25.Text = "Tareas Pendientes";
+            this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // SubMenuTurnos
             // 
@@ -537,38 +554,12 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
-            this.panelContenedor.Controls.Add(this.label1);
-            this.panelContenedor.Controls.Add(this.pictureBox4);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(220, 60);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1019, 840);
             this.panelContenedor.TabIndex = 13;
             this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ebrima", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(232, 130);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(536, 45);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Instituto Tecnologico De Tlaxiaco";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox4.Image = global::UbiTec.Properties.Resources.Tec_Tlaxiaco_3337_;
-            this.pictureBox4.Location = new System.Drawing.Point(268, 208);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(478, 377);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
             // 
             // panel2
             // 
@@ -686,9 +677,6 @@
             this.panel1.ResumeLayout(false);
             this.SubMenuTurnos.ResumeLayout(false);
             this.subMenuUbicaciones.ResumeLayout(false);
-            this.panelContenedor.ResumeLayout(false);
-            this.panelContenedor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -736,11 +724,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
+        private System.Windows.Forms.Button button25;
     }
 }
 
