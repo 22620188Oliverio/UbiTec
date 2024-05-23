@@ -66,9 +66,12 @@
             this.btonMinimizar = new System.Windows.Forms.PictureBox();
             this.btonMaximizar = new System.Windows.Forms.PictureBox();
             this.BotonCerrar = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SubMenuTurnos.SuspendLayout();
             this.subMenuUbicaciones.SuspendLayout();
+            this.panelContenedor.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -77,6 +80,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -554,6 +558,8 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
+            this.panelContenedor.Controls.Add(this.label1);
+            this.panelContenedor.Controls.Add(this.pictureBox4);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(220, 60);
             this.panelContenedor.Name = "panelContenedor";
@@ -658,6 +664,28 @@
             this.BotonCerrar.TabStop = false;
             this.BotonCerrar.Click += new System.EventHandler(this.BotonCerrar_Click);
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::UbiTec.Properties.Resources.Tec_Tlaxiaco_3337_;
+            this.pictureBox4.Location = new System.Drawing.Point(273, 192);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(509, 431);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(185, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(717, 45);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "INSTITUTO TECNOLOGICO DE TLAXIACO";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -677,6 +705,8 @@
             this.panel1.ResumeLayout(false);
             this.SubMenuTurnos.ResumeLayout(false);
             this.subMenuUbicaciones.ResumeLayout(false);
+            this.panelContenedor.ResumeLayout(false);
+            this.panelContenedor.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -685,6 +715,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -728,6 +759,8 @@
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

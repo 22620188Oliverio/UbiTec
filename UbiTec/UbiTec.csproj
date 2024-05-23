@@ -542,5 +542,23 @@
   <ItemGroup>
     <None Include="Resources\stack_star_20dp_FILL0_wght400_GRAD0_opsz201.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_profile_account_contact_icon_229464.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_profile_user_avatar_icon_219236.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account_avatar_face_man_people_profile_user_icon_123197.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16381516.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

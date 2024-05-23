@@ -63,9 +63,59 @@ namespace UbiTec.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _16381516 {
+            get {
+                object obj = ResourceManager.GetObject("16381516", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1707498448438__2_ {
             get {
                 object obj = ResourceManager.GetObject("1707498448438 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2 {
+            get {
+                object obj = ResourceManager.GetObject("2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3 {
+            get {
+                object obj = ResourceManager.GetObject("3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap account_avatar_face_man_people_profile_user_icon_123197 {
+            get {
+                object obj = ResourceManager.GetObject("account_avatar_face_man_people_profile_user_icon_123197", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap account_profile_user_avatar_icon_219236 {
+            get {
+                object obj = ResourceManager.GetObject("account_profile_user_avatar_icon_219236", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -876,6 +926,16 @@ namespace UbiTec.Properties {
         internal static System.Drawing.Bitmap Tec_Tlaxiaco_3337_ {
             get {
                 object obj = ResourceManager.GetObject("Tec Tlaxiaco[3337]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap user_profile_account_contact_icon_229464 {
+            get {
+                object obj = ResourceManager.GetObject("user_profile_account_contact_icon_229464", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

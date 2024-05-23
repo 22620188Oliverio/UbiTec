@@ -214,9 +214,6 @@
   <data name="dupdo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dupdo (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cuadrado-en-blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cuadrado-en-blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Opciones E-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones E-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -262,6 +259,9 @@
   <data name="image 108" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image 108.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="image 9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image 9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -280,6 +280,9 @@
   <data name="Opciones G-1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones G-1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="account_profile_user_avatar_icon_219236" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\account_profile_user_avatar_icon_219236.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Opciones H-1 (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones H-1 (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -295,6 +298,9 @@
   <data name="Opciones S-1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones S-1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="user_profile_account_contact_icon_229464" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user_profile_account_contact_icon_229464.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Opciones D-1 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones D-1 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -303,6 +309,9 @@
   </data>
   <data name="Opciones N-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones N-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cuadrado-en-blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cuadrado-en-blanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Opciones I-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones I-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -321,6 +330,9 @@
   </data>
   <data name="Opciones M-1 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones M-1 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stack_star_20dp_FILL0_wght400_GRAD0_opsz201" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stack_star_20dp_FILL0_wght400_GRAD0_opsz201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Opciones F-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones F-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -343,8 +355,14 @@
   <data name="manage_search_FILL0_wght400_GRAD0_opsz24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\manage_search_FILL0_wght400_GRAD0_opsz24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Tec Tlaxiaco[3337]" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tec Tlaxiaco[3337].png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="account_avatar_face_man_people_profile_user_icon_123197" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\account_avatar_face_man_people_profile_user_icon_123197.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Opciones L-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Opciones L-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -361,7 +379,7 @@
   <data name="stack_star_24dp_FILL0_wght400_GRAD0_opsz24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\stack_star_24dp_FILL0_wght400_GRAD0_opsz24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="stack_star_20dp_FILL0_wght400_GRAD0_opsz201" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\stack_star_20dp_FILL0_wght400_GRAD0_opsz201.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="16381516" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\16381516.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
