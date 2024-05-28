@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.calendar = new System.Windows.Forms.MonthCalendar();
             this.txtTarea = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,7 +147,7 @@
             this.label2.Font = new System.Drawing.Font("Perpetua Titling MT", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(289, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(403, 41);
+            this.label2.Size = new System.Drawing.Size(393, 39);
             this.label2.TabIndex = 13;
             this.label2.Text = "Gestiona tus tareas";
             // 
@@ -182,6 +184,10 @@
             this.checkBox1.TabIndex = 16;
             this.checkBox1.Text = "Tarea completada";
             this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form2
             // 
@@ -224,5 +230,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha_inicio;
         private System.Windows.Forms.DataGridViewTextBoxColumn fecha_fin;
         private System.Windows.Forms.DataGridViewTextBoxColumn estado_tarea;
+        private System.Windows.Forms.Timer timer1;
     }
 }

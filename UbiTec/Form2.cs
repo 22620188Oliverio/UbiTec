@@ -19,7 +19,7 @@ namespace UbiTec
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
             // Obtener la descripción de la tarea desde el TextBox
             string descripcionTarea = txtTarea.Text;
@@ -38,43 +38,50 @@ namespace UbiTec
             // Determinar el estado de la tarea dependiendo del CheckBox
             string estadoTarea = checkBox1.Checked ? "Tarea terminada" : "Pendiente";
 
-            // Guardar los datos en la base de datos
-            string sql = "INSERT INTO tareas (tarea_descripcion, fecha_inicio, fecha_fin, estado) VALUES (@descripcion, @inicio, @fin, @estado)";
-            MySqlConnection conexionBD = Conexion.getConexion();
-            conexionBD.Open();
-
+            // Realizar la operación de base de datos en un hilo separado
             try
             {
-                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
-                comando.Parameters.AddWithValue("@descripcion", descripcionTarea);
-                comando.Parameters.AddWithValue("@inicio", inicio);
-                comando.Parameters.AddWithValue("@fin", fin);
-                comando.Parameters.AddWithValue("@estado", estadoTarea);
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Tarea guardada en la base de datos");
+                int idTarea = await Task.Run(() => GuardarTareaEnBaseDeDatos(descripcionTarea, inicio, fin, estadoTarea));
 
-                // Obtener el ID de la tarea recién insertada
-                string sqlId = "SELECT LAST_INSERT_ID()";
-                comando = new MySqlCommand(sqlId, conexionBD);
-                int idTarea = Convert.ToInt32(comando.ExecuteScalar());
-
-                // Agregar la nueva fila al DataGridView
-                dataGridView1.Rows.Add(idTarea, descripcionTarea, inicio, fin, estadoTarea);
-
-                // Limpiar el TextBox para la próxima tarea
-                txtTarea.Clear();
+                // Actualizar la UI en el hilo principal
+                if (idTarea > 0)
+                {
+                    dataGridView1.Rows.Add(idTarea, descripcionTarea, inicio, fin, estadoTarea);
+                    MessageBox.Show("Tarea guardada en la base de datos");
+                    txtTarea.Clear();
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error al guardar la tarea en la base de datos: " + ex.Message);
             }
-            finally
-            {
-                conexionBD.Close();
-            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private int GuardarTareaEnBaseDeDatos(string descripcionTarea, DateTime inicio, DateTime fin, string estadoTarea)
+        {
+            int idTarea = -1;
+            string sql = "INSERT INTO tareas (tarea_descripcion, fecha_inicio, fecha_fin, estado) VALUES (@descripcion, @inicio, @fin, @estado)";
+            using (MySqlConnection conexionBD = Conexion.getConexion())
+            {
+                conexionBD.Open();
+                using (MySqlCommand comando = new MySqlCommand(sql, conexionBD))
+                {
+                    comando.Parameters.AddWithValue("@descripcion", descripcionTarea);
+                    comando.Parameters.AddWithValue("@inicio", inicio);
+                    comando.Parameters.AddWithValue("@fin", fin);
+                    comando.Parameters.AddWithValue("@estado", estadoTarea);
+                    comando.ExecuteNonQuery();
+
+                    // Obtener el ID de la tarea recién insertada
+                    string sqlId = "SELECT LAST_INSERT_ID()";
+                    comando.CommandText = sqlId;
+                    idTarea = Convert.ToInt32(comando.ExecuteScalar());
+                }
+            }
+            return idTarea;
+        }
+
+            private void button2_Click(object sender, EventArgs e)
         {
             // Verificar si hay una fila seleccionada en el DataGridView
             if (dataGridView1.SelectedRows.Count > 0)
@@ -153,6 +160,11 @@ namespace UbiTec
             {
                 conexionBD.Close();
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }

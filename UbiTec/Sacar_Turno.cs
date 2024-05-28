@@ -48,24 +48,12 @@ namespace UbiTec
             MessageBox.Show(mensaje);
         }
 
-        private void Sacar_Turno_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void txtNombre_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void BotonCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void txtNombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

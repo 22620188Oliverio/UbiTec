@@ -60,7 +60,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(411, 34);
             this.txtNombre.TabIndex = 1;
-            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // label1
             // 
@@ -73,7 +72,6 @@
             this.label1.Size = new System.Drawing.Size(211, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ingresa tu nombre";
-            this.label1.Click += new System.EventHandler(this.txtNombre_Click);
             // 
             // BotonCerrar
             // 
@@ -168,7 +166,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sacar_Turno";
             this.Text = "Sacar_Turno";
-            this.Load += new System.EventHandler(this.Sacar_Turno_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
