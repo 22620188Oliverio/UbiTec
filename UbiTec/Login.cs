@@ -73,7 +73,7 @@ namespace UbiTec
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Application.Exit(); 
+            Application.Exit();
         }
 
         private void panel2_MouseDown(object sender, MouseEventArgs e)
@@ -145,5 +145,79 @@ namespace UbiTec
         {
 
         }
+
+        private void pictureBox6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_Enter(object sender, EventArgs e)
+        {
+
+            {
+
+                if (txtUsuario.Text == "usuario")
+
+                {
+
+                }
+
+                txtUsuario.Text = "";
+
+                txtUsuario.ForeColor = Color.White;
+            }
+        }
+
+        private void txtUsuario_Validated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsuario_Leave(object sender, EventArgs e)
+        {
+
+            if (txtUsuario.Text == "")
+
+            {
+
+                txtUsuario.Text = " usuario"; txtUsuario.ForeColor = Color.White;
+
+            }
+
+        
+
     }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+
+            {
+
+                if (txtPassword.Text == "")
+
+                {
+
+                }
+
+                txtPassword.Text = "contraseña";
+
+                txtPassword.ForeColor = Color.White; txtPassword.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void txtPassword_Leave(object sender, EventArgs e)
+        {
+
+            if (txtPassword.Text == "")
+
+            {
+
+                txtPassword.Text = "contraseña"; txtPassword.ForeColor = Color.White;
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            
+        }
+
+    
+}
 }
