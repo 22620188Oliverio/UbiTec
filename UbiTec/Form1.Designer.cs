@@ -29,11 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button25 = new System.Windows.Forms.Button();
             this.SubMenuTurnos = new System.Windows.Forms.Panel();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             this.subMenuUbicaciones = new System.Windows.Forms.Panel();
             this.button20 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
@@ -54,33 +53,31 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btonUbicaciones = new System.Windows.Forms.Button();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button25 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.btonUbicaciones = new System.Windows.Forms.Button();
-            this.btonMinimizar = new System.Windows.Forms.PictureBox();
-            this.btonMaximizar = new System.Windows.Forms.PictureBox();
-            this.BotonCerrar = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btonRestaurar = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btonMinimizar = new System.Windows.Forms.PictureBox();
+            this.btonMaximizar = new System.Windows.Forms.PictureBox();
+            this.BotonCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.SubMenuTurnos.SuspendLayout();
             this.subMenuUbicaciones.SuspendLayout();
             this.panelContenedor.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -98,60 +95,34 @@
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button25
+            // 
+            this.button25.BackColor = System.Drawing.Color.White;
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button25.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button25.FlatAppearance.BorderSize = 0;
+            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Image = global::UbiTec.Properties.Resources.patient_list_FILL0_wght400_GRAD0_opsz24;
+            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button25.Location = new System.Drawing.Point(0, 452);
+            this.button25.Name = "button25";
+            this.button25.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button25.Size = new System.Drawing.Size(220, 60);
+            this.button25.TabIndex = 11;
+            this.button25.Text = "Tareas Pendientes";
+            this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
+            // 
             // SubMenuTurnos
             // 
             this.SubMenuTurnos.BackColor = System.Drawing.Color.White;
-            this.SubMenuTurnos.Controls.Add(this.button24);
-            this.SubMenuTurnos.Controls.Add(this.button23);
-            this.SubMenuTurnos.Controls.Add(this.button1);
             this.SubMenuTurnos.Controls.Add(this.button22);
             this.SubMenuTurnos.Dock = System.Windows.Forms.DockStyle.Top;
             this.SubMenuTurnos.Location = new System.Drawing.Point(0, 383);
             this.SubMenuTurnos.Name = "SubMenuTurnos";
-            this.SubMenuTurnos.Size = new System.Drawing.Size(220, 241);
+            this.SubMenuTurnos.Size = new System.Drawing.Size(220, 69);
             this.SubMenuTurnos.TabIndex = 10;
-            // 
-            // button24
-            // 
-            this.button24.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button24.FlatAppearance.BorderSize = 0;
-            this.button24.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Location = new System.Drawing.Point(0, 180);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(220, 60);
-            this.button24.TabIndex = 3;
-            this.button24.Text = "Ciencias Básicas";
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
-            // 
-            // button23
-            // 
-            this.button23.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button23.FlatAppearance.BorderSize = 0;
-            this.button23.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Location = new System.Drawing.Point(0, 120);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(220, 60);
-            this.button23.TabIndex = 2;
-            this.button23.Text = "Recursos Financieros";
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(0, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 60);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Servicios Escolares";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button22
             // 
@@ -166,6 +137,25 @@
             this.button22.Text = "Division de Estudios";
             this.button22.UseVisualStyleBackColor = true;
             this.button22.Click += new System.EventHandler(this.button22_Click);
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.White;
+            this.button21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button21.FlatAppearance.BorderSize = 0;
+            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Image = global::UbiTec.Properties.Resources.patient_list_FILL0_wght400_GRAD0_opsz24;
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(0, 323);
+            this.button21.Name = "button21";
+            this.button21.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button21.Size = new System.Drawing.Size(220, 60);
+            this.button21.TabIndex = 9;
+            this.button21.Text = "Solicitar turno de atencion";
+            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // subMenuUbicaciones
             // 
@@ -499,92 +489,6 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // panelContenedor
-            // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
-            this.panelContenedor.Controls.Add(this.label1);
-            this.panelContenedor.Controls.Add(this.pictureBox4);
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(220, 60);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(1019, 840);
-            this.panelContenedor.TabIndex = 13;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.btonRestaurar);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1239, 60);
-            this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(185, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(717, 45);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "INSTITUTO TECNOLOGICO DE TLAXIACO";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::UbiTec.Properties.Resources.Tec_Tlaxiaco_3337_;
-            this.pictureBox4.Location = new System.Drawing.Point(273, 192);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(509, 431);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
-            // 
-            // button25
-            // 
-            this.button25.BackColor = System.Drawing.Color.White;
-            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button25.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button25.FlatAppearance.BorderSize = 0;
-            this.button25.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Image = global::UbiTec.Properties.Resources.patient_list_FILL0_wght400_GRAD0_opsz24;
-            this.button25.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button25.Location = new System.Drawing.Point(0, 624);
-            this.button25.Name = "button25";
-            this.button25.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button25.Size = new System.Drawing.Size(220, 60);
-            this.button25.TabIndex = 11;
-            this.button25.Text = "Tareas Pendientes";
-            this.button25.UseVisualStyleBackColor = false;
-            this.button25.Click += new System.EventHandler(this.button25_Click);
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.White;
-            this.button21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button21.FlatAppearance.BorderSize = 0;
-            this.button21.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Image = global::UbiTec.Properties.Resources.patient_list_FILL0_wght400_GRAD0_opsz24;
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(0, 323);
-            this.button21.Name = "button21";
-            this.button21.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.button21.Size = new System.Drawing.Size(220, 60);
-            this.button21.TabIndex = 9;
-            this.button21.Text = "Solicitar turno de atencion";
-            this.button21.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
-            // 
             // btonUbicaciones
             // 
             this.btonUbicaciones.BackColor = System.Drawing.Color.White;
@@ -603,44 +507,53 @@
             this.btonUbicaciones.UseVisualStyleBackColor = false;
             this.btonUbicaciones.Click += new System.EventHandler(this.btonUbicaciones_Click);
             // 
-            // btonMinimizar
+            // panelContenedor
             // 
-            this.btonMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btonMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btonMinimizar.Image = global::UbiTec.Properties.Resources.eliminar;
-            this.btonMinimizar.Location = new System.Drawing.Point(1117, 12);
-            this.btonMinimizar.Name = "btonMinimizar";
-            this.btonMinimizar.Size = new System.Drawing.Size(25, 25);
-            this.btonMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btonMinimizar.TabIndex = 10;
-            this.btonMinimizar.TabStop = false;
-            this.btonMinimizar.Click += new System.EventHandler(this.btonMinimizar_Click);
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(57)))), ((int)(((byte)(106)))));
+            this.panelContenedor.Controls.Add(this.label1);
+            this.panelContenedor.Controls.Add(this.pictureBox4);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(220, 60);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(1019, 840);
+            this.panelContenedor.TabIndex = 13;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
-            // btonMaximizar
+            // label1
             // 
-            this.btonMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btonMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btonMaximizar.Image = global::UbiTec.Properties.Resources.cuadrado_en_blanco;
-            this.btonMaximizar.Location = new System.Drawing.Point(1159, 12);
-            this.btonMaximizar.Name = "btonMaximizar";
-            this.btonMaximizar.Size = new System.Drawing.Size(25, 25);
-            this.btonMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btonMaximizar.TabIndex = 9;
-            this.btonMaximizar.TabStop = false;
-            this.btonMaximizar.Click += new System.EventHandler(this.btonMaximizar_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(185, 98);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(699, 44);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "INSTITUTO TECNOLOGICO DE TLAXIACO";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // BotonCerrar
+            // pictureBox4
             // 
-            this.BotonCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BotonCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BotonCerrar.Image = global::UbiTec.Properties.Resources.simbolo_x;
-            this.BotonCerrar.Location = new System.Drawing.Point(1202, 12);
-            this.BotonCerrar.Name = "BotonCerrar";
-            this.BotonCerrar.Size = new System.Drawing.Size(25, 25);
-            this.BotonCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BotonCerrar.TabIndex = 8;
-            this.BotonCerrar.TabStop = false;
-            this.BotonCerrar.Click += new System.EventHandler(this.BotonCerrar_Click);
+            this.pictureBox4.Image = global::UbiTec.Properties.Resources.Tec_Tlaxiaco_3337_;
+            this.pictureBox4.Location = new System.Drawing.Point(273, 192);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(509, 431);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.btonRestaurar);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1239, 60);
+            this.panel2.TabIndex = 0;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // pictureBox1
             // 
@@ -686,6 +599,45 @@
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
             // 
+            // btonMinimizar
+            // 
+            this.btonMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btonMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btonMinimizar.Image = global::UbiTec.Properties.Resources.eliminar;
+            this.btonMinimizar.Location = new System.Drawing.Point(1117, 12);
+            this.btonMinimizar.Name = "btonMinimizar";
+            this.btonMinimizar.Size = new System.Drawing.Size(25, 25);
+            this.btonMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btonMinimizar.TabIndex = 10;
+            this.btonMinimizar.TabStop = false;
+            this.btonMinimizar.Click += new System.EventHandler(this.btonMinimizar_Click);
+            // 
+            // btonMaximizar
+            // 
+            this.btonMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btonMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btonMaximizar.Image = global::UbiTec.Properties.Resources.cuadrado_en_blanco;
+            this.btonMaximizar.Location = new System.Drawing.Point(1159, 12);
+            this.btonMaximizar.Name = "btonMaximizar";
+            this.btonMaximizar.Size = new System.Drawing.Size(25, 25);
+            this.btonMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btonMaximizar.TabIndex = 9;
+            this.btonMaximizar.TabStop = false;
+            this.btonMaximizar.Click += new System.EventHandler(this.btonMaximizar_Click);
+            // 
+            // BotonCerrar
+            // 
+            this.BotonCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BotonCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BotonCerrar.Image = global::UbiTec.Properties.Resources.simbolo_x;
+            this.BotonCerrar.Location = new System.Drawing.Point(1202, 12);
+            this.BotonCerrar.Name = "BotonCerrar";
+            this.BotonCerrar.Size = new System.Drawing.Size(25, 25);
+            this.BotonCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BotonCerrar.TabIndex = 8;
+            this.BotonCerrar.TabStop = false;
+            this.BotonCerrar.Click += new System.EventHandler(this.BotonCerrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -707,15 +659,15 @@
             this.subMenuUbicaciones.ResumeLayout(false);
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).EndInit();
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -755,9 +707,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;

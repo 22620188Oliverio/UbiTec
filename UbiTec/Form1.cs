@@ -246,7 +246,7 @@ namespace UbiTec
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Sacar_Turno());
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
