@@ -82,26 +82,6 @@ namespace UbiTec
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btonMaximizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
@@ -121,103 +101,50 @@ namespace UbiTec
             btonMaximizar.Visible = true;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtUsuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox6_Click_1(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
 
+            if (txtUsuario.Text == "usuario")
             {
-
-                if (txtUsuario.Text == "usuario")
-
-                {
-
-                }
-
                 txtUsuario.Text = "";
-
-                txtUsuario.ForeColor = Color.White;
+                txtUsuario.ForeColor = Color.Black;
             }
         }
 
-        private void txtUsuario_Validated(object sender, EventArgs e)
-        {
 
-        }
 
         private void txtUsuario_Leave(object sender, EventArgs e)
         {
 
-            if (txtUsuario.Text == "")
-
+            if (string.IsNullOrWhiteSpace(txtUsuario.Text))
             {
-
-                txtUsuario.Text = " usuario"; txtUsuario.ForeColor = Color.White;
-
+                txtUsuario.Text = "usuario";
+                txtUsuario.ForeColor = Color.Black; // Cambia el color del marcador de posición según sea necesario
             }
-
-        
-
-    }
+        }
 
         private void txtPassword_Enter(object sender, EventArgs e)
         {
-
+            if (txtPassword.Text == "password")
             {
-
-                if (txtPassword.Text == "")
-
-                {
-
-                }
-
-                txtPassword.Text = "contraseña";
-
-                txtPassword.ForeColor = Color.White; txtPassword.UseSystemPasswordChar = true;
+                txtPassword.Text = "";
+                txtPassword.ForeColor = Color.Black;
+                txtPassword.UseSystemPasswordChar = true;
             }
+
         }
 
         private void txtPassword_Leave(object sender, EventArgs e)
         {
-
-            if (txtPassword.Text == "")
-
+            if (string.IsNullOrWhiteSpace(txtPassword.Text))
             {
-
-                txtPassword.Text = "contraseña"; txtPassword.ForeColor = Color.White;
+                txtPassword.Text = "password";
+                txtPassword.ForeColor = Color.Black;
                 txtPassword.UseSystemPasswordChar = false;
             }
-            
         }
+            
+    }
+}
 
-    
-}
-}
