@@ -579,5 +579,8 @@
   <ItemGroup>
     <None Include="Resources\account_circle_24dp_FILL0_wght400_GRAD0_opsz24.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\straight-horizontal-line_icon-icons.com_74237.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

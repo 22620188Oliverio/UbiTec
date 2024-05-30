@@ -71,5 +71,15 @@ namespace UbiTec
         {
             this.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Sacar_Turno_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

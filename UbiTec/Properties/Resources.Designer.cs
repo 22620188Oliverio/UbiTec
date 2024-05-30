@@ -963,6 +963,16 @@ namespace UbiTec.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap straight_horizontal_line_icon_icons_com_74237 {
+            get {
+                object obj = ResourceManager.GetObject("straight-horizontal-line_icon-icons.com_74237", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Tec_Tlaxiaco_3337_ {
             get {
                 object obj = ResourceManager.GetObject("Tec Tlaxiaco[3337]", resourceCulture);
