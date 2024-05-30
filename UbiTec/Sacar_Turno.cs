@@ -55,7 +55,7 @@ namespace UbiTec
             QRCodeGenerator qrGenerador = new QRCodeGenerator();
             QRCodeData qrDatos = qrGenerador.CreateQrCode(contenido, QRCodeGenerator.ECCLevel.H);
             QRCode qrCodigo = new QRCode(qrDatos);
-            Bitmap qrImagen = qrCodigo.GetGraphic(5, Color.Black, Color.White, true);
+            Bitmap qrImagen = qrCodigo.GetGraphic(8, Color.Black, Color.White, true);
 
             // Mostrar el código QR en el PictureBox
             pictureBox.Image = qrImagen;
@@ -72,14 +72,5 @@ namespace UbiTec
             this.Close();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Sacar_Turno_Load(object sender, EventArgs e)
-        {
-
-        }
-    }
+           }
 }
