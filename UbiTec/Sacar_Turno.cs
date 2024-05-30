@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BibliotecaCola;
 using MySql.Data.MySqlClient;
+using QRCoder;
 
 
 namespace UbiTec
@@ -28,23 +29,39 @@ namespace UbiTec
             String num_control = No_Control.Text;
             String carrera = combo_Carrera.Text;
 
-
-            String sql = "INSERT  INTO alumno(nombre, No_control, carrera) VALUES ('" + nombre + "', '" + num_control + "', '" + carrera + "');";
-
-            MySqlConnection conexionBD = Conexion.getConexion();
-            conexionBD.Open();
-
-            try
+            // Verificar que todos los cuadros de texto estén llenos
+            if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(num_control) || string.IsNullOrWhiteSpace(carrera))
             {
-                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Se hizo tiempo de espera");
-            }catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);    
-            }finally { conexionBD.Close(); }    
+                MessageBox.Show("Todos los campos deben estar llenos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-            string mensaje = Cola.Encolar(nombre);
+            // Verificar que el número de control solo contenga números
+            if (!int.TryParse(num_control, out _))
+            {
+                MessageBox.Show("El número de control solo debe contener números.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Verificar que el número de control no se repita
+            if (Cola.ExisteNumeroDeControl(num_control))
+            {
+                MessageBox.Show("El número de control ya existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Generar el código QR con los datos válidos
+            String contenido = num_control + " " + nombre + " " + carrera;
+            QRCodeGenerator qrGenerador = new QRCodeGenerator();
+            QRCodeData qrDatos = qrGenerador.CreateQrCode(contenido, QRCodeGenerator.ECCLevel.H);
+            QRCode qrCodigo = new QRCode(qrDatos);
+            Bitmap qrImagen = qrCodigo.GetGraphic(5, Color.Black, Color.White, true);
+
+            // Mostrar el código QR en el PictureBox
+            pictureBox.Image = qrImagen;
+
+            // Encolar el nombre y el número de control y mostrar mensaje
+            string mensaje = Cola.Encolar(nombre, num_control);
             MessageBox.Show(mensaje);
         }
 
@@ -53,21 +70,6 @@ namespace UbiTec
         private void BotonCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

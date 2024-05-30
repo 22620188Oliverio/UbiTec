@@ -16,8 +16,12 @@ namespace UbiTec
         public Form1()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            btonMaximizar.Visible = false;
+            btonRestaurar.Visible = true;
             diseñoInvisible();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
         }
         private void diseñoInvisible()
         {
@@ -51,7 +55,7 @@ namespace UbiTec
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void BotonCerrar_Click(object sender, EventArgs e)
@@ -78,10 +82,6 @@ namespace UbiTec
             btonMaximizar.Visible = true;
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
         private Form activeForm = null;
         private void AbrirFormHijo(Form formHijo)
         {
@@ -232,25 +232,11 @@ namespace UbiTec
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void panel2_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
 
         }
 
@@ -264,41 +250,9 @@ namespace UbiTec
             AbrirFormHijo(new Sacar_Turno());
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void AbrirFormulario<MiForm>() where MiForm : Form, new()
-        {
-            Form formulario;
-            formulario = panelContenedor.Controls.OfType<MiForm>().FirstOrDefault();
-            // Si el formulario no existe en el panel
-            if (formulario == null)
-            {
-                formulario = new MiForm();
-                formulario.TopLevel = false;
-                formulario.FormBorderStyle = FormBorderStyle.None;
-                formulario.Dock = DockStyle.Fill;
-                panelContenedor.Controls.Add(formulario);
-                panelContenedor.Tag = formulario;
-                formulario.Show();
-            }
-            else
-            {
-                formulario.BringToFront(); // Si el formulario ya existe, solo lo lleva al frente
-            }
-        }
-
-
         private void button25_Click(object sender, EventArgs e)
         {
             AbrirFormHijo(new Form2());
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

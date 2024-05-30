@@ -18,7 +18,23 @@ namespace UbiTec
             InitializeComponent();
         }
 
-        private void btnRegistrar_Click(object sender, EventArgs e)
+        private void BotonCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        //Para poder mover el panel en diferentes posiciones desde la barra principal
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnRegistrar_Click_1(object sender, EventArgs e)
         {
             Usuarios usuario = new Usuarios();
             usuario.Usuario = txtUsuario.Text;
@@ -47,40 +63,5 @@ namespace UbiTec
             }
         }
 
-        private void BotonCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        //Para poder mover el panel en diferentes posiciones desde la barra principal
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
-        private void panel2_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, 0x112, 0xf012, 0);
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnRegistrar_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

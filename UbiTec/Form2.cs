@@ -17,33 +17,25 @@ namespace UbiTec
         public Form2()
         {
             InitializeComponent();
+            
         }
 
         private async void button1_Click(object sender, EventArgs e)
         {
-            // Obtener la descripción de la tarea desde el TextBox
             string descripcionTarea = txtTarea.Text;
-
-            // Verificar si el TextBox está vacío
             if (string.IsNullOrWhiteSpace(descripcionTarea))
             {
                 MessageBox.Show("Por favor, ingresa una descripción para la tarea.");
-                return; // Salir del método sin intentar guardar la tarea
+                return; 
             }
-
-            // Obtener las fechas de inicio y fin desde el DateTimePicker
             DateTime inicio = calendar.SelectionStart;
             DateTime fin = calendar.SelectionEnd;
 
-            // Determinar el estado de la tarea dependiendo del CheckBox
             string estadoTarea = checkBox1.Checked ? "Tarea terminada" : "Pendiente";
 
-            // Realizar la operación de base de datos en un hilo separado
             try
             {
                 int idTarea = await Task.Run(() => GuardarTareaEnBaseDeDatos(descripcionTarea, inicio, fin, estadoTarea));
-
-                // Actualizar la UI en el hilo principal
                 if (idTarea > 0)
                 {
                     dataGridView1.Rows.Add(idTarea, descripcionTarea, inicio, fin, estadoTarea);
@@ -160,11 +152,6 @@ namespace UbiTec
             {
                 conexionBD.Close();
             }
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-
         }
     }
 }

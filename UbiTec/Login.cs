@@ -16,6 +16,9 @@ namespace UbiTec
         public Login()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            btonMaximizar.Visible = false;
+            btonRestaurar.Visible = true;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
 
@@ -85,8 +88,11 @@ namespace UbiTec
         private void btonMaximizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Maximized;
-            btonMaximizar.Visible = false;
-            btonRestaurar.Visible = true;
+            if (this.WindowState == FormWindowState.Maximized) { 
+                btonMaximizar.Visible = false;
+                btonRestaurar.Visible = true;
+            }
+            
         }
 
         private void btonMinimizar_Click_1(object sender, EventArgs e)
@@ -97,15 +103,18 @@ namespace UbiTec
         private void btonRestaurar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
-            btonRestaurar.Visible = false;
-            btonMaximizar.Visible = true;
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                btonRestaurar.Visible = false;
+                btonMaximizar.Visible = true;
+            }
         }
 
 
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
 
-            if (txtUsuario.Text == "usuario")
+            if (txtUsuario.Text == "Usuario")
             {
                 txtUsuario.Text = "";
                 txtUsuario.ForeColor = Color.Black;
@@ -119,14 +128,14 @@ namespace UbiTec
 
             if (string.IsNullOrWhiteSpace(txtUsuario.Text))
             {
-                txtUsuario.Text = "usuario";
+                txtUsuario.Text = "Usuario";
                 txtUsuario.ForeColor = Color.Black; // Cambia el color del marcador de posición según sea necesario
             }
         }
 
         private void txtPassword_Enter(object sender, EventArgs e)
         {
-            if (txtPassword.Text == "password")
+            if (txtPassword.Text == "Password")
             {
                 txtPassword.Text = "";
                 txtPassword.ForeColor = Color.Black;
@@ -139,7 +148,7 @@ namespace UbiTec
         {
             if (string.IsNullOrWhiteSpace(txtPassword.Text))
             {
-                txtPassword.Text = "password";
+                txtPassword.Text = "Password";
                 txtPassword.ForeColor = Color.Black;
                 txtPassword.UseSystemPasswordChar = false;
             }

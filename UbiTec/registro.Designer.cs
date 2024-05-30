@@ -133,7 +133,6 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(0, 46);
             this.label5.TabIndex = 12;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox4
             // 
@@ -186,7 +185,6 @@
             this.label4.Size = new System.Drawing.Size(87, 25);
             this.label4.TabIndex = 22;
             this.label4.Text = "Nombre:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -275,7 +273,6 @@
             this.label1.Size = new System.Drawing.Size(79, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "Usuario";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox5
             // 

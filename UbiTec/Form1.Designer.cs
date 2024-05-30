@@ -61,9 +61,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btonRestaurar = new System.Windows.Forms.PictureBox();
+            this.btonMaximizar = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btonMinimizar = new System.Windows.Forms.PictureBox();
-            this.btonMaximizar = new System.Windows.Forms.PictureBox();
             this.BotonCerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.SubMenuTurnos.SuspendLayout();
@@ -74,9 +74,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -93,7 +93,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(220, 840);
             this.panel1.TabIndex = 12;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // button25
             // 
@@ -517,10 +516,10 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1019, 840);
             this.panelContenedor.TabIndex = 13;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -529,10 +528,10 @@
             this.label1.Size = new System.Drawing.Size(699, 44);
             this.label1.TabIndex = 13;
             this.label1.Text = "INSTITUTO TECNOLOGICO DE TLAXIACO";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // pictureBox4
             // 
+            this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.Image = global::UbiTec.Properties.Resources.Tec_Tlaxiaco_3337_;
             this.pictureBox4.Location = new System.Drawing.Point(273, 192);
             this.pictureBox4.Name = "pictureBox4";
@@ -546,13 +545,13 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.btonRestaurar);
+            this.panel2.Controls.Add(this.btonMaximizar);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1239, 60);
             this.panel2.TabIndex = 0;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // pictureBox1
@@ -580,7 +579,7 @@
             this.btonRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btonRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btonRestaurar.Image = global::UbiTec.Properties.Resources.dupdo__1_;
-            this.btonRestaurar.Location = new System.Drawing.Point(1062, 12);
+            this.btonRestaurar.Location = new System.Drawing.Point(1159, 12);
             this.btonRestaurar.Name = "btonRestaurar";
             this.btonRestaurar.Size = new System.Drawing.Size(25, 25);
             this.btonRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -588,6 +587,19 @@
             this.btonRestaurar.TabStop = false;
             this.btonRestaurar.Visible = false;
             this.btonRestaurar.Click += new System.EventHandler(this.btonRestaurar_Click);
+            // 
+            // btonMaximizar
+            // 
+            this.btonMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btonMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btonMaximizar.Image = global::UbiTec.Properties.Resources.cuadrado_en_blanco;
+            this.btonMaximizar.Location = new System.Drawing.Point(1159, 12);
+            this.btonMaximizar.Name = "btonMaximizar";
+            this.btonMaximizar.Size = new System.Drawing.Size(25, 25);
+            this.btonMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btonMaximizar.TabIndex = 9;
+            this.btonMaximizar.TabStop = false;
+            this.btonMaximizar.Click += new System.EventHandler(this.btonMaximizar_Click);
             // 
             // pictureBox3
             // 
@@ -612,19 +624,6 @@
             this.btonMinimizar.TabStop = false;
             this.btonMinimizar.Click += new System.EventHandler(this.btonMinimizar_Click);
             // 
-            // btonMaximizar
-            // 
-            this.btonMaximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btonMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btonMaximizar.Image = global::UbiTec.Properties.Resources.cuadrado_en_blanco;
-            this.btonMaximizar.Location = new System.Drawing.Point(1159, 12);
-            this.btonMaximizar.Name = "btonMaximizar";
-            this.btonMaximizar.Size = new System.Drawing.Size(25, 25);
-            this.btonMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btonMaximizar.TabIndex = 9;
-            this.btonMaximizar.TabStop = false;
-            this.btonMaximizar.Click += new System.EventHandler(this.btonMaximizar_Click);
-            // 
             // BotonCerrar
             // 
             this.BotonCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -646,7 +645,6 @@
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btonMinimizar);
-            this.Controls.Add(this.btonMaximizar);
             this.Controls.Add(this.BotonCerrar);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -664,9 +662,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonRestaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btonMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btonMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BotonCerrar)).EndInit();
             this.ResumeLayout(false);
 

@@ -25,9 +25,9 @@ namespace BibliotecaCola
             return frente == null;
         }
 
-        public static string Encolar(string nombre)
+        public static string Encolar(string nombre, string numeroDeControl)
         {
-            Nodo nuevo = new Nodo(turnoActual, nombre);
+            Nodo nuevo = new Nodo(turnoActual, nombre, numeroDeControl);
             turnoActual++;
 
             if (Vacia())
@@ -43,12 +43,26 @@ namespace BibliotecaCola
             return $"El turno de {nombre} es {turnoActual}";
         }
 
+        public static bool ExisteNumeroDeControl(string numeroDeControl)
+        {
+            Nodo recorrido = frente;
+            while (recorrido != null)
+            {
+                if (recorrido.NumeroDeControl == numeroDeControl)
+                {
+                    return true;
+                }
+                recorrido = recorrido.Siguiente;
+            }
+            return false;
+        }
+
         public static void ImprimirCola()
         {
             Nodo recorrido = frente;
             while (recorrido != null)
             {
-                Console.WriteLine($"{recorrido.Nombre} - Turno: {recorrido.Turno+1}");
+                Console.WriteLine($"{recorrido.Nombre} - Turno: {recorrido.Turno + 1} - Número de Control: {recorrido.NumeroDeControl}");
                 recorrido = recorrido.Siguiente;
             }
         }
@@ -58,12 +72,14 @@ namespace BibliotecaCola
     {
         public int Turno;
         public string Nombre;
+        public string NumeroDeControl;
         public Nodo Siguiente;
 
-        public Nodo(int turno, string nombre)
+        public Nodo(int turno, string nombre, string numeroDeControl)
         {
             Turno = turno;
             Nombre = nombre;
+            NumeroDeControl = numeroDeControl;
             Siguiente = null;
         }
     }
