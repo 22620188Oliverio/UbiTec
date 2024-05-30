@@ -208,9 +208,9 @@
             // pictureBox
             // 
             this.pictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox.Location = new System.Drawing.Point(306, 361);
+            this.pictureBox.Location = new System.Drawing.Point(340, 333);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(411, 314);
+            this.pictureBox.Size = new System.Drawing.Size(411, 339);
             this.pictureBox.TabIndex = 25;
             this.pictureBox.TabStop = false;
             // 
